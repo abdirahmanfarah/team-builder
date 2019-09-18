@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Form from "./components/Form";
+import Create from "./components/Form";
+
 
 function App() {
   const [member, setMember] = useState([{
@@ -14,12 +15,11 @@ function App() {
     <div className="App">
       <h1>Members</h1>
       
-      {/* <Form />  */}
 
         {member.map((member, index) => {
-
+          
           return (
-
+            
             <div className = "member" key ={index}> 
               <h2>{member.name}</h2>
               <p>{member.email}</p>
@@ -28,6 +28,7 @@ function App() {
             </div>
           )
         })}
+        <Create /> 
     </div>
   );
 }

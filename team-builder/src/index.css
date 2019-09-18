@@ -17,4 +17,12 @@ code {
   background-color:lightblue;
   width:50%;
   margin:auto;
+  margin-bottom:10px;
+}
+.form-list {
+  display:flex;
+  justify-content: center;
+  background-color:lightgreen;
+  margin:auto;
+  width:50%;
 }

@@ -1,6 +1,14 @@
-import React, { useState } from 'react-dom';
+import React, { useState, useEffect} from "react";
 
-const Form = props => {
-  return <></>
+const Create = props => {
+  return (
+      <form className="form-list">
+        {/* <label htmlFor = "textField">Add Member</label> */}
+        <input type = "text"></input>
+        <button>
+          Add Member
+        </button>
+      </form>
+  )
 }
-export default Form;
+export default Create;
