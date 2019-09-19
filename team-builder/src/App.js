@@ -15,6 +15,7 @@ function App() {
     <div className="App">
       <h1>Members</h1>
       
+      <Create member ={member} setMember ={setMember}/> 
 
         {member.map((member, index) => {
           
@@ -28,7 +29,6 @@ function App() {
             </div>
           )
         })}
-        <Create /> 
     </div>
   );
 }

@@ -17,12 +17,27 @@ code {
   background-color:lightblue;
   width:50%;
   margin:auto;
-  margin-bottom:10px;
+  margin-top:10px;
 }
-.form-list {
+form {
   display:flex;
   justify-content: center;
-  background-color:lightgreen;
+  flex-direction: column;
+  /* background-color:lightgreen; */
   margin:auto;
   width:50%;
+}
+input {
+  width:60%;
+  text-align: center;
+  margin:auto;
+}
+/* textarea {
+  width:60%;
+  text-align: center;
+  margin:auto;
+} */
+button {
+  margin:auto;
+  margin-top:20px;
 }
