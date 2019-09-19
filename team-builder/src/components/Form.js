@@ -26,10 +26,15 @@ const Create = props => {
     event.preventDefault();
     console.log(newMember);
 
-    props.setMember([
-      ...props.member, newMember
-    ]);
     
+    if(!newMember.name || !newMember.email || !newMember.role) {
+      alert ("Please fill out all fields!");
+    } else {
+      
+      props.setMember([
+        ...props.member, newMember
+      ]);
+    }
     setNewMember(initialMember);
   };
 
